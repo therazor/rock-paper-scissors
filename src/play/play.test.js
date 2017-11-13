@@ -33,3 +33,14 @@ it('identifies scissors as winner vs paper', () => {
     winner: PLAYER.N2
   });
 });
+
+it('has no winners for rock vs rock', () => {
+  const status = play({
+    [PLAYER.N1]: MOVE.ROCK,
+    [PLAYER.N2]: MOVE.ROCK,
+  });
+
+  expect(status).toMatchObject({
+    winner: PLAYER.NONE
+  });
+});

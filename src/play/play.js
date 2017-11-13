@@ -28,6 +28,8 @@ const Play = ({
         winner = PLAYER.N1;
     } else if (using[move2].winsVs(move1)) {
         winner = PLAYER.N2;
+    } else {
+        winner = PLAYER.NONE;
     }
 
     return {
