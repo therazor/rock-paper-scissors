@@ -1,3 +1,5 @@
-const Play = () => ({});
+const Play = () => ({
+    winner: ''
+});
 
 export default Play;
