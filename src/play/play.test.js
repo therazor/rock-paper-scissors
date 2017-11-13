@@ -22,3 +22,14 @@ it('identifies paper as winner vs rock', () => {
     winner: PLAYER.N1
   });
 });
+
+it('identifies scissors as winner vs paper', () => {
+  const status = play({
+    [PLAYER.N1]: MOVE.PAPER,
+    [PLAYER.N2]: MOVE.SCISSORS,
+  });
+
+  expect(status).toMatchObject({
+    winner: PLAYER.N2
+  });
+});
