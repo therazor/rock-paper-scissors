@@ -186,3 +186,24 @@ main .player.player-2 .hand {
     margin: 7px 0;
   }
 }
+
+@keyframes retract-left-hand {
+  to {
+    transform: translate3d(-16%, -16%, 0);
+  }
+}
+
+@keyframes retract-right-hand {
+  to {
+    transform: translate3d(16%, -16%, 0) scaleX(-1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.1);
+  }
+  30%, 100% {
+    transform: scale(1);
+  }
+}
