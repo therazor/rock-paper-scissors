@@ -16,7 +16,7 @@ const using = {
     [MOVE.SCISSORS]: { winsVs: move => move === MOVE.PAPER },
 }
 
-const Play = ({
+const play = ({
     [PLAYER.N1]: move1,
     [PLAYER.N2]: move2,
   } = {}) => {
@@ -37,4 +37,4 @@ const Play = ({
     }
 };
 
-export default Play;
+export default play;
