@@ -151,7 +151,7 @@ main.start-game .player.player-2 .hand {
 }
 .game-complete.outcome span {
   font-weight: bold;
-  font-size: 10vmin;
+  font-size: 7vmin;
   line-height: 1.4;
   text-align: center;
 }
