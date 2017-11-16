@@ -1,0 +1,72 @@
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+main .player {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 48%;
+}
+main .player .player-type {
+  text-align: center;
+  font-weight: bold;
+  font-size: 6.5vmin;
+  line-height: 1.4;
+}
+main .player .player-type.computer {
+  display: none;
+}
+.autoplay main .player .player-type.human {
+  display: none;
+}
+.autoplay main .player .player-type.computer {
+  display: block;
+}
+main .player .hand {
+  flex-grow: 1;
+  transform-origin: center 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding-top: 50%;
+}
+main .player.player-2 .hand {
+  transform: scaleX(-1);
+}
+main.start-game .player.player-1 .hand {
+  animation: retract-left-hand 0.4s ease-in-out, retract-left-hand 0.3s 0.4s ease-in-out reverse, retract-left-hand 0.2s 0.7s ease-in-out, retract-left-hand 0.15s 0.9s ease-in-out reverse;
+}
+main.start-game .player.player-2 .hand {
+  animation: retract-right-hand 0.4s ease-in-out, retract-right-hand 0.3s 0.4s ease-in-out reverse, retract-right-hand 0.2s 0.7s ease-in-out, retract-right-hand 0.15s 0.9s ease-in-out reverse;
+}
+.tutorial main {
+	filter: blur(5px);
+
+	pointer-events: none;
+	cursor: default;
+}
+
+.rock {
+  background-image: url(images/rock.svg);
+}
+
+.paper {
+  background-image: url(images/paper.svg);
+}
+
+.scissors {
+  background-image: url(images/scissors.svg);
+}
+
+@keyframes retract-left-hand {
+  to {
+    transform: translate3d(-16%, -16%, 0);
+  }
+}
+
+@keyframes retract-right-hand {
+  to {
+    transform: translate3d(16%, -16%, 0) scaleX(-1);
+  }
+}

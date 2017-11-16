@@ -1,5 +1,6 @@
 import React from 'react';
-import { MOVE } from '../play/play'
+import { MOVE } from '../play/play';
+import './ActionPicker.css';
 
 const ActionPicker = ({ buttonsEnabled, clickCallback }) => {
   return (

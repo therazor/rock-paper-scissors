@@ -1,6 +1,7 @@
 import React from 'react';
 import { MOVE, PLAYER } from '../play/play'
 import { MODE } from '../App';
+import './Hands.css'
 
 const moveToStyle = {
   [MOVE.ROCK]: 'rock',

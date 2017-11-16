@@ -1,6 +1,7 @@
 import React from 'react';
 import { MODE } from '../App';
 import { PLAYER } from '../play/play';
+import './Result.css'
 
 const Result = ({ winner, gameMode, animationComplete }) => {
   const message = winner => {

@@ -1,0 +1,44 @@
+.action-picker {
+  display: flex;
+  align-self: flex-end;
+  justify-content: space-between;
+  margin: 0;
+}
+.locked .action-picker, .autoplay .action-picker {
+  visibility: hidden;
+}
+.action-picker li {
+  list-style: none;
+  margin: 0 10px;
+}
+.action-picker li .pick-action {
+  border-radius: 50%;
+  border: 1px solid #333;
+  outline: none;
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-size: 90% auto;
+  background-position: left bottom;
+  /* .locked & {
+      pointer-events: none;
+      background-color: rgba( 50, 50, 50, 0.2 );
+      @include filter(blur(1px));
+  } */
+}
+
+@media (orientation: landscape) {
+  .action-picker {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .action-picker {
+    flex-direction: column;
+  }
+
+  .action-picker li {
+    margin: 7px 0;
+  }
+}

@@ -1,0 +1,31 @@
+.outcome {
+  display: none;
+}
+.game-complete.outcome {
+  position: fixed;
+  top: 15%;
+  bottom: 65%;
+  left: 30%;
+  right: 30%;
+  border: 2px solid #51546B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(126, 137, 252, 0.7);
+  animation: zoom 1.2s cubic-bezier(0.365, 1.37, 0.515, 1.38);
+}
+.game-complete.outcome span {
+  font-weight: bold;
+  font-size: 7vmin;
+  line-height: 1.4;
+  text-align: center;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.1);
+  }
+  30%, 100% {
+    transform: scale(1);
+  }
+}
