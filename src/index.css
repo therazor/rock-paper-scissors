@@ -8,6 +8,7 @@ body {
 	height: 100%;
 	max-width: 1024px;
 	margin: 0 auto;
+  font: 16px/26px Helvetica, Helvetica Neue, Arial;
 }
 
 .wrapper {
