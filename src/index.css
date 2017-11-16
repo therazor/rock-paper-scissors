@@ -90,6 +90,7 @@ main .player .hand {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  padding-top: 50%;
 }
 main .player.player-2 .hand {
   transform: scaleX(-1);
