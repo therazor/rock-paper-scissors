@@ -94,10 +94,10 @@ main .player .hand {
 main .player.player-2 .hand {
   transform: scaleX(-1);
 }
-.start-game main .player.player-1 .hand {
+main.start-game .player.player-1 .hand {
   animation: retract-left-hand 0.4s ease-in-out, retract-left-hand 0.3s 0.4s ease-in-out reverse, retract-left-hand 0.2s 0.7s ease-in-out, retract-left-hand 0.15s 0.9s ease-in-out reverse;
 }
-.start-game main .player.player-2 .hand {
+main.start-game .player.player-2 .hand {
   animation: retract-right-hand 0.4s ease-in-out, retract-right-hand 0.3s 0.4s ease-in-out reverse, retract-right-hand 0.2s 0.7s ease-in-out, retract-right-hand 0.15s 0.9s ease-in-out reverse;
 }
 
@@ -134,7 +134,7 @@ main .player.player-2 .hand {
 .outcome {
   display: none;
 }
-.game-complete .outcome {
+.game-complete.outcome {
   position: fixed;
   top: 15%;
   bottom: 65%;
@@ -147,7 +147,7 @@ main .player.player-2 .hand {
   background: rgba(126, 137, 252, 0.7);
   animation: zoom 1.2s cubic-bezier(0.365, 1.37, 0.515, 1.38);
 }
-.game-complete .outcome span {
+.game-complete.outcome span {
   font-weight: bold;
   font-size: 10vmin;
   line-height: 1.4;
